@@ -44,6 +44,13 @@ const Meme = () => {
       [name]: value,
     }));
   }
+  localStorage.setItem(
+    "This-is-an-object-Sebs",
+    JSON.stringify({ message: "see?" })
+  );
+  console.log(
+    typeof JSON.parse(localStorage.getItem("This-is-an-object-Sebs"))
+  );
 
   return (
     <main>
